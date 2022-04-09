@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://laovoly.com">
+    <meta property="og:title" content="LAOVOLY">
+    <meta property="og:image" content="https://laovoly.com/images/og.png">
+    <meta property="og:description" content="WE MAKE TREND">
+    <meta property="og:site_name" content="laovoly.com">
+    <meta property="og:locale" content="en_US">
+    <!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* body {
+            background-color: rgb(113, 113, 112);
+        } */
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            -webkit-animation: gradient 5s ease infinite;
+            animation: gradient 5s ease infinite;
+        }
+
+        @-webkit-keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        img {
+            max-width:50%;
+            display: block;
+            margin: auto;
+        }
+
+        .text1 {
+            font-family: 'Patrick Hand', cursive;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<script>
+    var index = 0;   //이미지에 접근하는 인덱스
+    window.onload = function () {
+        slideShow();
+    }
+
+    function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+        }
+        index++;
+        if (index > x.length) {
+            index = 1;  //인덱스가 초과되면 1로 변경
+        }
+        x[index - 1].style.display = "block";  //해당 인덱스는 block으로
+        setTimeout(slideShow, 500);   //함수를 4초마다 호출
+
+    }
+</script>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+        integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+    <div style="text-align : center;"> <img class="slide1" src="images/1.png">
+        <div class="text1">
+            <h2 style="color:#FFFFFF" class="animate__animated animate__bounce">OUR WEBSITE IS CURRENTLY UNDER
+                CONSTRUCTION. WE'LL BE DONE SOON!</h1>
+                <h2>+82 10 5222 4758</h1>
+        </div>
+    </div>
+</body>
+
+</html>
