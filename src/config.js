@@ -10,7 +10,7 @@ const description = "WE MAKE TREND";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "LV",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
@@ -24,27 +24,28 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 300,
     layersOrder: [
-      { name: "21.box" },
-      { name: "20.bg" },
-      { name: "19.legs" },
-      { name: "18.Acc" },
-      { name: "17.dress" },
-      { name: "16.face" },
-      { name: "15.hair" },
-      { name: "14.sprout" },
-      { name: "13.neckless" },
-      { name: "12.earing" },
-      { name: "11.cap" },
-      { name: "10.mouth" },
-      { name: "9.chick" },
-      { name: "8.nose" },
-      { name: "7.mask" },
-      { name: "6.eye" },
-      { name: "4.eyebrow" },
-      { name: "3.glasses" },
-      { name: "2.crown" },
+      { name: "21.bg" },
+      { name: "20.legs" },
+      { name: "19.acc" },
+      { name: "18.dress" },
+      { name: "17.face" },
+      { name: "16.hair" },
+      { name: "15.sprout" },
+      { name: "14.neckless" },
+      { name: "13.earing" },
+      { name: "12.cap" },
+      { name: "11.mouth" },
+      { name: "10.chick" },
+      { name: "9.nose" },
+      { name: "8.mask" },
+      { name: "7.eye" },
+      { name: "6.eyebrow" },
+      { name: "5.audry pipe" },
+      { name: "4.glasses" },
+      { name: "3.crown" },
+      { name: "2.frame" },
       { name: "1.label" },
     ],
   },
@@ -85,7 +86,7 @@ const pixelFormat = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",
