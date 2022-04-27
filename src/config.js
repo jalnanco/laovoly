@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 300,
+    growEditionSizeTo: 200,
     layersOrder: [
       { name: "21.bg" },
       { name: "20.legs" },
@@ -56,9 +56,9 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 2084,
-  height: 2084,
-  smoothing: false,
+  width: 3504,
+  height: 3632,
+  smoothing: true,
 };
 
 const gif = {
